@@ -1,0 +1,244 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body {
+	background-color: beige;
+	color: black;
+}
+
+.mobile {
+	display: none;
+}
+
+nav ul{
+	
+	list-style: none;
+	display: flex;
+}
+
+nav ul li a {
+padding: 1.5rem;
+font-weight: bold;
+}
+
+
+.desktop{
+	
+	margin-top: 0px;
+	display: grid;
+	gap:20px;
+	grid-template-columns: 1fr 1fr ;
+	background-color: white;
+	
+	align-content:center;
+	margin: 0px auto;
+	
+	
+	width: 100%;
+	height: 80px;
+	
+}
+
+.logo {
+ text-align: center;
+}
+
+.icon{
+	width:15px;
+	height: auto;
+}
+.desktop ul {
+	display: flex;
+	margin: auto;
+	justify-content: right;
+	
+
+}
+
+
+
+.banner {
+	
+	
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  z-index: 1;
+  position:relative;
+
+}
+
+.banner::before {    
+	content: "";
+	background-image: url("./resources/images/banner-landingpage.jpg");
+
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.85;
+}
+
+#sign-up-cta{
+	background-color: rgb(167, 196, 36);
+	max-width:30%;
+	height:50%;
+	position:absolute;
+	top:200px;
+	left: 100px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	grid-template-columns: 1fr;
+	
+	
+}
+
+.cursive {
+	font-style: italic;
+	color:white;
+}
+header h2{
+	font-size: 28px;
+	color: white;
+}
+
+h1{
+	font-size: 40px;
+	color: white;
+}
+
+span {
+	color: white;
+	line-height: 1;
+	padding: 20px 100px 30px 100px;
+	display: block;
+	
+}
+
+button{
+	margin-top: 40px;
+	background-color: grey;
+	color:white;
+	padding: 20px 40px;
+	
+	
+}
+#features-section{
+	max-width:1200px;
+	margin:10px auto;
+	padding: 20px;
+	display: grid;
+	gap: 3rem;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	
+}
+
+.feature .center{
+	background-color: white;
+	padding: 30px;
+}
+
+.image-container {
+	
+}
+
+.image-container img {
+	max-width: 100%;
+	height: auto;
+	
+	
+	
+}
+.content h2{
+	font-size:25px;
+	font-weight: bold;
+	text-align: center;
+	
+}
+.content h3{
+	text-align: center;
+}
+
+.images-container {
+	
+	margin:0px auto;
+	background-color: gray;
+	padding: 30px;
+	
+	display: grid;
+	
+	grid-template-columns: repeat(4, 1fr);
+	
+}
+#quotes-section {
+	
+	background-color: white;
+	padding: 30px;
+}
+
+.content center{
+	display:grid;
+	grid-template-columns: 2fr 1fr;
+	justify-items: start;
+	
+	
+
+}
+.quote{
+	color:black;
+	font-size:1rem;
+	padding: 0px;
+	font-style: italic;
+	
+}
+
+#quotes-section .content {
+	display: grid;
+	grid-template-columns: 1fr  fr;
+	grid-auto-flow: column;
+	justify-content: center;
+	gap: 1.5rem;
+
+}
+
+.content span {
+	color:black
+}
+
+footer{
+	background-color: lightgray;
+}
+footer .content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.content .location{
+	text-align: end;
+}
+
+
+
+@media only screen and (max-width: 1250px) {
+	#sign-up-cta{
+		max-width:40%;
+	
+	}
+}
+
+@media (max-width: 550px) { 
+	
+	footer{
+		display: none;
+	}
+}
+
