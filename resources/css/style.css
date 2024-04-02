@@ -76,7 +76,7 @@ font-weight: bold;
 
 .banner::before {    
 	content: "";
-	background-image: url("./resources/images/banner-landingpage.jpg");
+	background-image: url("../images/banner-landingpage.jpg");
 
 	background-size: cover;
 	position: absolute;
